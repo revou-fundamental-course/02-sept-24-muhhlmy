@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RevoU</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <!-- Judul -->
+        <div id="title">
+          <h1>Welcome to Katik</h1>
+          <p>
+            Hai Sobat, Selamat datang di Katik :) Sebuah web apps sederhana yang
+            berfungsi untuk menghitung nilai luas dan keliling bangun datar
+          </p>
+        </div>
+
+        <!-- Pilih Jenis Hitung -->
+        <div id="contain-button">
+          <button class="button" id="btnLuas">Luas Segitiga</button>
+          <button class="button" id="btnKeliling">Keliling Segitiga</button>
+        </div>
+
+        <!-- Gambar -->
+        <div id="gambar">
+          <img src="assets/triangle.png" alt="" width="330px" />
+        </div>
+
+        <!-- Deskripsi -->
+        <div id="desc">
+          <div id="desc-luas-segitiga" style="display: flex">
+            <p id="decs-rumus">Rumus Luas Segitiga : <b>L = 1/2 x a x t</b></p>
+            <ul id="decs-luas">
+              <li>L = Luas</li>
+              <li>a = Panjang Alas</li>
+              <li>t = Tinggi</li>
+            </ul>
+          </div>
+          <div id="desc-keliling-segitiga">
+            <p id="decs-rumus-keliling">
+              Rumus Keliling Segitiga : <b>K = S1 + S2 + S3</b>
+            </p>
+            <ul id="decs-luas-keliling">
+              <li>K = Keliling</li>
+              <li>S1 = Sisi A</li>
+              <li>S2 = Sisi B</li>
+              <li>S3 = Sisi C</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Submit -->
+        <form id="contain-submit-luas">
+          <div class="input-luas">
+            <input
+              type="number"
+              id="alas"
+              placeholder="Masukkan Alas"
+              required
+            />
+            <input
+              type="number"
+              id="tinggi"
+              placeholder="Masukkan Tinggi"
+              required
+            />
+          </div>
+          <div class="submit-button">
+            <button id="hitungBtn">Hitung</button>
+            <button id="resetBtn">Reset</button>
+          </div>
+        </form>
+        <form id="contain-submit-keliling">
+          <div class="input-keliling">
+            <input
+              type="number"
+              id="sisi1"
+              placeholder="Masukkan Sisi 1"
+              required
+            />
+            <input
+              type="number"
+              id="sisi2"
+              placeholder="Masukkan Sisi 2"
+              required
+            />
+            <input
+              type="number"
+              id="sisi3"
+              placeholder="Masukkan Sisi 3"
+              required
+            />
+          </div>
+          <div class="submit-button-keliling">
+            <button id="hitungKelilingBtn">Hitung</button>
+            <button id="resetKelilingBtn">Reset</button>
+          </div>
+        </form>
+
+        <!-- Jawaban -->
+        <div id="answer">
+          <p id="theAnswer"></p>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="js/script.js"></script>
+</html>
